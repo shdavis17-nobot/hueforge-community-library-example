@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# Pre-commit hook: regenerate manifest.json when libraries/ files are staged.
+# SETUP: edit SOURCE_NAME and BASE_URL below, then run:
+#   git config core.hooksPath .githooks
+
+LIBRARIES_DIR="libraries"
+MANIFEST="manifest.json"
+SCRIPT="generate_manifest.py"
+
+# CONFIGURE THESE:
+SOURCE_NAME="My PLA Collection"
+BASE_URL="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/libraries"
+
+staged=$(git diff --cached --name-only)
+
+if echo "$staged" | grep -qE "^${LIBRARIES_DIR}/|^${MANIFEST}$"; then
+    echo "[pre-commit] libraries changed, regenerating ${MANIFEST}..."
+
+    if ! command -v python3 &>/dev/null && ! command -v python &>/dev/null; then
+        echo "[pre-commit] ERROR: python not found."
+        exit 1
+    fi
+    PYTHON=$(command -v python3 || command -v python)
+
+    if ! "$PYTHON" "${SCRIPT}" \
+            --source-name "${SOURCE_NAME}" \
+            --base-url "${BASE_URL}" \
+            --dir "${LIBRARIES_DIR}" \
+            --out "${MANIFEST}"; then
+        echo "[pre-commit] ERROR: manifest generation failed."
+        exit 1
+    fi
+
+    git add "${MANIFEST}"
+    echo "[pre-commit] ${MANIFEST} updated and staged."
+fi
