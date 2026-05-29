@@ -9,7 +9,7 @@ SCRIPT="generate_manifest.py"
 
 # CONFIGURE THESE:
 SOURCE_NAME="Shawn's PLA Collection"
-BASE_URL="https://raw.githubusercontent.com/shdavis17-nobot/hueforge-community-library-example/main/libraries"
+BASE_URL="https://raw.githubusercontent.com/shdavis17-nobot/hueforge-community-library-example/master/libraries"
 
 staged=$(git diff --cached --name-only)
 
