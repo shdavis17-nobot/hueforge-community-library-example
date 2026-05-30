@@ -1,0 +1,67 @@
+{
+  "Name": "Shawns PLA Collection",
+  "Description": "Full filament library synced from Filament Manager",
+  "BaseUrl": "https://raw.githubusercontent.com/shdavis17-nobot/hueforge-community-library-example/master/libraries",
+  "Filaments": [
+    {
+      "Brand": "Overture",
+      "Color": "Black",
+      "Hex": "#000000",
+      "Name": "Black",
+      "Owned": true,
+      "Transmissivity": 1.5,
+      "Type": "PETG",
+      "uuid": "aaffe370-b06c-4cfc-b3f6-27e5875cf4bd"
+    },
+    {
+      "Brand": "Sunlu",
+      "Color": "White",
+      "Hex": "#ffffff",
+      "Name": "White",
+      "Owned": true,
+      "Transmissivity": 0.2,
+      "Type": "PLA+",
+      "uuid": "c970b73c-cda5-4524-bc0a-b150f9214931"
+    },
+    {
+      "Brand": "Polymaker",
+      "Color": "Natural White",
+      "Hex": "#fdfbe6",
+      "Name": "Natural White",
+      "Owned": true,
+      "Transmissivity": 4.5,
+      "Type": "PLA",
+      "uuid": "897f8162-c449-4b9b-bc29-0c592bfc3132"
+    },
+    {
+      "Brand": "HATCHBOX",
+      "Color": "SILVER",
+      "Hex": "#A9A9A9",
+      "Name": "SILVER",
+      "Owned": true,
+      "Transmissivity": 3,
+      "Type": "PLA",
+      "uuid": "910e6294-d0a8-45d5-98ce-b3e10a8d97b2"
+    },
+    {
+      "Brand": "Gizmo Dorks",
+      "Color": "White",
+      "Hex": "#f8f8f8",
+      "Name": "White",
+      "Owned": true,
+      "Transmissivity": 5,
+      "Type": "HIPS",
+      "uuid": "bf7fae2d-135d-4313-a618-015fc3821678"
+    },
+    {
+      "Brand": "RAONG",
+      "Color": "Transparent",
+      "Hex": "#DDDDDD",
+      "Name": "Transparent",
+      "Owned": true,
+      "Transmissivity": 8,
+      "Type": "PETG",
+      "uuid": "3fb407a2-5592-478f-aa5b-e1d2c659f5d8"
+    }
+  ]
+}
