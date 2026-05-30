@@ -1,13 +1,13 @@
 {
-  "source_name": "Shawn's PLA Collection",
+  "source_name": "Shawns PLA Collection",
   "libraries": [
     {
-      "name": "shawn-pla",
-      "filename": "shawn-pla.json",
+      "name": "filament-library",
+      "filename": "filament-library.json",
       "category": "community",
-      "url": "https://raw.githubusercontent.com/shdavis17-nobot/hueforge-community-library-example/master/libraries/shawn-pla.json",
-      "sha256": "05bf2923d388f7ef5c9266c0be437312970a9c708fa0e327e4844883a112a425",
-      "filament_count": 1
+      "url": "https://raw.githubusercontent.com/shdavis17-nobot/hueforge-community-library-example/master/libraries/filament-library.json",
+      "sha256": "e2f82f0a54f14c21979b456dd9af279443012a6f6035c6278a285188a992d4c7",
+      "filament_count": 6
     }
   ]
 }
